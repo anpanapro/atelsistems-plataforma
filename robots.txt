@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /img/backups_original/
+
+# Host canónico
+Host: https://www.atelsistems.com
+
+# Sitemap oficial
+Sitemap: https://www.atelsistems.com/sitemap.xml
