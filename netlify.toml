@@ -7,32 +7,22 @@
 [build]
   publish = "."
 
-# ----------------------------------------------------------------------------
-# 1. REDIRECCIONES 301 DE DOMINIOS SECUNDARIOS Y CANONICALIZACIÓN (ex-.htaccess)
-# ----------------------------------------------------------------------------
-
-# Redirección estratégica 301 de atelmalaga.com hacia la landing PCI de Málaga
+# Canonicalización de atelmalaga.com hacia https://www.atelmalaga.com/ (mantener dominio con www y SSL)
 [[redirects]]
   from = "https://atelmalaga.com/*"
-  to = "https://www.atelsistems.com/mantenimiento-contra-incendios/malaga/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://www.atelmalaga.com/*"
-  to = "https://www.atelsistems.com/mantenimiento-contra-incendios/malaga/"
+  to = "https://www.atelmalaga.com/:splat"
   status = 301
   force = true
 
 [[redirects]]
   from = "http://atelmalaga.com/*"
-  to = "https://www.atelsistems.com/mantenimiento-contra-incendios/malaga/"
+  to = "https://www.atelmalaga.com/:splat"
   status = 301
   force = true
 
 [[redirects]]
   from = "http://www.atelmalaga.com/*"
-  to = "https://www.atelsistems.com/mantenimiento-contra-incendios/malaga/"
+  to = "https://www.atelmalaga.com/:splat"
   status = 301
   force = true
 
